@@ -14,27 +14,24 @@
     </script>
     <link href="css/estilos.css"
       rel="stylesheet">
+      <link rel="stylesheet" href="./css/menu.css">
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <link rel="stylesheet" href="css/index.css">
     <script type="module"
       src="cmp/mi-footer.js">
       </script>
   </head>
   <body>
-    <div class="contenido">
+    <header class="header">
+      <span class="material-icons">
+        home
+        </span>
       <h1>Control IoT</h1>
-      <p>
-        <a href="dispositivo.html"
-          target="_blank">Ver
-          dispositivo
-          simulado.</a>
-      </p>
-      <p>
-        <a href="historial.html"
-          target="_blank">Ver
-          historial.</a>
-      </p>
+    </header>
+    <div class="contenido">
       <p>
         <label>
-          Dispositivo
+          <p class="titleDevice">Nombre del dispositivo</p>
           <output
             id="ctDispositivo">
           </output>
@@ -50,15 +47,24 @@
       </p>
       <p>
         <label>
-          <input id=ctSalida
-            type="checkbox">
+          <input id="ctSalida"
+          type="checkbox">
+            <span class="material-icons" id="icon2" >
+              power_settings_new
+              </span>
+         
+          
           Salida
         </label>
       </p>
-      <mi-footer></mi-footer>
+      
+      
     </div>
+    <mi-menu class="menu"></mi-menu>
     <script type="module"
       src="js/CtrlMovil.js">
       </script>
+    <script type="module" src="./cmp/mi-menu.js"></script>
+    <script type="module" src="./cmp/buttonPower.js"></script>
   </body>
 </html>
