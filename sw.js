@@ -53,6 +53,16 @@ const ARCHIVOS = [
   "/"
 ];
 
+async function cargaCache() {
+  console.log(
+    "Intentando cargar cache",
+    CACHE);
+  const cache =
+    await caches.open(CACHE);
+  await caches.addAll(ARCHIVOS);
+  console.log("Cache", CACHE,
+    "cargado");
+}
 
 self.addEventListener("install",
   evt => {
@@ -82,16 +92,7 @@ self.addEventListener("activate",
   () =>
     console.log("sw activo."));
 
-async function cargaCache() {
-  console.log(
-    "Intentando cargar cache",
-    CACHE);
-  const cache =
-    await caches.open(CACHE);
-  await cache.addAll(ARCHIVOS);
-  console.log("Cache", CACHE,
-    "cargado");
-}
+
 
 async function usaCache(evt) {
   const cache =
