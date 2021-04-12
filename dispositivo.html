@@ -5,6 +5,10 @@
     <meta name="viewport"
       content="width=device-width,
       initial-scale=1.0">
+      <link rel="stylesheet" href="css/index.css">
+      <link rel="stylesheet" href="./css/menu.css">
+     <link rel="stylesheet" href="css/dispositivo.css">
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <title>
       Simulación de Dispositivo
       IoT
@@ -16,11 +20,13 @@
       </script>
   </head>
   <body>
+    <header class="header">
+      <span class="material-icons">
+        devices
+        </span>
+      <h1>Simulación de Dispositivo IoT</h1>
+    </header>
     <div class="contenido">
-      <h1>
-        Simulación de Dispositivo
-        IoT
-      </h1>
       <p>
         <a href="index.html"
           target="_blank">
@@ -28,13 +34,13 @@
       </p>
       <p>
         <label>
-          Dispositivo
+         <p class="titleDevice">Nombre dispositivo</p>
           <output
             id="ctDispositivo">
           </output>
         </label>
       </p>
-      <p>
+      <p class="input">
         <label>
           Entrada
           <input id="ctEntrada"
@@ -42,11 +48,14 @@
             min="0" max="10">
         </label>
       </p>
-      <p>
+      <p >
         <label>
           <input id="ctSondea"
             type="checkbox"
             checked>
+            <span class="material-icons" id="icon2">
+              toggle_off
+              </span>
           Sondea Salida
         </label>
       </p>
@@ -61,10 +70,14 @@
         <output id="iotError">
         </output>
       </p>
-      <mi-footer></mi-footer>
+     
     </div>
+    <mi-menu class="menu"></mi-menu>
+    
     <script type="module"
       src="disp/CtrlDispositivo.js">
       </script>
+      <script type="module" src="./cmp/mi-menu.js"></script>
+      <script src="cmp/buttonPower2.js"></script>
   </body>
 </html>
