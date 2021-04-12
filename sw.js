@@ -53,42 +53,16 @@ const ARCHIVOS = [
   "/"
 ];
 
-/*self.addEventListener("install",
+
+self.addEventListener("install",
   evt => {
     console.log("sw instalado.");
     /* Realiza la instalación.
      * Carga los archivos
      * requeridos en la caché. */
     // @ts-ignore
-    //evt.waitUntil(cargaCache());
-  //});*/
-self.addEventListener('install', e => {
-e.waitUntil(
-caches.open(CACHE)
-.then(cache => {
-return cache.addAll(ARCHIVOS)
-.then(() => self.skipWaiting())
-})
-.catch(err => console.log('Falló registro de cache', err))
-)
-})
-
-e.waitUntil(
-caches.keys()
-.then(cacheNames => {
-return Promise.all(
-cacheNames.map(cacheName => {
-//Eliminamos lo que ya no se necesita en cache
-if (cacheWhitelist.indexOf(cacheName) === -1) {
-return caches.delete(cacheName)
-}
-})
-)
-})
-// Le indica al SW activar el cache actual
-.then(() => self.clients.claim())
-)
-})};
+    evt.waitUntil(cargaCache());
+  });
 
 /* Toma los archivos solicitados
  * de la caché; si no los
