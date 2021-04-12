@@ -61,7 +61,7 @@ const ARCHIVOS = [
      * requeridos en la caché. */
     // @ts-ignore
     //evt.waitUntil(cargaCache());
-  });*/
+  //});*/
 self.addEventListener('install', e => {
 e.waitUntil(
 caches.open(CACHE)
