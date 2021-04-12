@@ -73,6 +73,23 @@ return cache.addAll(ARCHIVOS)
 )
 })
 
+e.waitUntil(
+caches.keys()
+.then(cacheNames => {
+return Promise.all(
+cacheNames.map(cacheName => {
+//Eliminamos lo que ya no se necesita en cache
+if (cacheWhitelist.indexOf(cacheName) === -1) {
+return caches.delete(cacheName)
+}
+})
+)
+})
+// Le indica al SW activar el cache actual
+.then(() => self.clients.claim())
+)
+})
+
 /* Toma los archivos solicitados
  * de la caché; si no los
  * encuentra, se descargan. */
