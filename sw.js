@@ -49,6 +49,7 @@ const ARCHIVOS = [
   "dispositivo.html",
   "historial.html",
   "index.html",
+  "img/PDGN.png",
   "/"
 ];
 
