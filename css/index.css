@@ -1,0 +1,31 @@
+.header{
+    background-color: #283655;
+    width: 100%;
+    text-align: left;
+    color: #D0E1F9;
+}
+.header > span , h1{
+    display: inline-block;
+    margin-left: 5%
+}
+meter{
+    -webkit-appearance: none;
+    display: flex; 
+    width: 40%;
+    margin: 0 auto;
+    height: 50px;
+    background: rgb(216, 213, 213);
+ 
+}
+#ctDispositivo{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 200%
+}
+.titleDevice{
+    font-size: 132%;
+}
+#icon2{
+    font-size: 400%;
+    color: #A9A9A9;
+
+}
