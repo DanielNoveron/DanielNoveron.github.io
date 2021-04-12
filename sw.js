@@ -88,7 +88,7 @@ return caches.delete(cacheName)
 // Le indica al SW activar el cache actual
 .then(() => self.clients.claim())
 )
-});
+})};
 
 /* Toma los archivos solicitados
  * de la caché; si no los
