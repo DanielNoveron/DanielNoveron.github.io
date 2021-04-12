@@ -1,0 +1,25 @@
+{
+  "short_name": "PWA",
+  "name": "Ejemplo de PWA",
+  "start_url": "/index.html",
+  "display": "standalone",
+  "theme_color": "#81d4f4",
+  "background_color": "#ff6d00",
+  "icons": [
+    {
+      "src": "img/PDGN.png",
+      "sizes": "2376x2800",
+      "type": "image/png"
+    },
+    {
+      "src": "img/PDGN.png",
+      "sizes": "2376x2800",
+      "type": "image/png"
+    },
+    {
+      "src": "img/PDGN.png",
+      "sizes": "2376x2800",
+      "type": "image/png"
+    }
+  ]
+}
