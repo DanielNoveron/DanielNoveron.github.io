@@ -3,6 +3,9 @@
     width: 100%;
     text-align: left;
     color: #D0E1F9;
+      position: absolute;
+  top: 0;
+  height: 40px;
 }
 .header > span , h1{
     display: inline-block;
