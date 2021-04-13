@@ -60,7 +60,7 @@ async function cargaCache() {
     "Intentando cargar cache",
     CACHE);
   const cache =
-    await caches.open(CACHE);
+    await cache.open(CACHE);
   await cache.addAll(ARCHIVOS);
   console.log("Cache", CACHE,
     "cargado");
