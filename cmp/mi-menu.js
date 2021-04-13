@@ -7,7 +7,7 @@ class MiMenu extends HTMLElement{
                 <thead>
                     <tr>
                         <th>
-                            <a target="BLANK__" href="index.html">
+                            <a href="index.html">
                                  <span class="material-icons">
                                       home
                                  </span>
@@ -16,7 +16,7 @@ class MiMenu extends HTMLElement{
                         <th></th><th></th>
                         <th>
                           <a href="dispositivo.html"
-                               target="_blank">
+                               >
                                     <span class="material-icons">
                                         devices
                                     </span>
@@ -25,7 +25,7 @@ class MiMenu extends HTMLElement{
                         <th></th><th></th>
                         <th>
                              <a href="historial.html"
-                                target="_blank">
+                                
                                       <span class="material-icons">
                                            backup_table
                                       </span>
@@ -36,7 +36,7 @@ class MiMenu extends HTMLElement{
                 <tbody>
                     <tr>
                         <td>
-                            <a target="BLANK__" href="index.html">
+                            <a href="index.html">
                               Inicio
                             </a>
                         </td>
@@ -50,7 +50,7 @@ class MiMenu extends HTMLElement{
                         <td></td><td></td>
                         <td>
                            <a href="historial.html"
-                              target="_blank">
+                              >
                                 Historial
                            </a>
                         </td>
