@@ -42,8 +42,7 @@ class MiMenu extends HTMLElement{
                         </td>
                         <td></td><td></td>
                         <td>
-                        <a href="dispositivo.html"
-                             target="_blank">
+                        <a href="dispositivo.html">
                                  Simulación
                         </a>
                         </td>
