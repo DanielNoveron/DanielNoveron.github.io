@@ -35,6 +35,7 @@ const ARCHIVOS = [
   "disp/CtrlDispositivo.js",
   "disp/ProxyEntrada.js",
   "disp/ProxySalida.js",
+  "disp/ProxyHistorial.js",
   "disp/ResInt.js",
   "disp/utilIot.js",
   "js/CtrlHistorial.js",
@@ -50,6 +51,7 @@ const ARCHIVOS = [
   "historial.html",
   "index.html",
   "img/PDGN.png",
+  "manifest.json",
   "/"
 ];
 
