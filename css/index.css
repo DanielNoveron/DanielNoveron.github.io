@@ -9,7 +9,7 @@
     margin-left: 5%
 }
 meter{
-    -webkit-appearance: none;
+   
     display: flex; 
     width: 40%;
     margin: 0 auto;
