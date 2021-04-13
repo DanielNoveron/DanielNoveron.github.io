@@ -17,7 +17,7 @@
  * cambios en tu sitio, para
  * depués actualizar este archivo.
  */
-const CACHE = "dmppwa-1.000";
+const CACHE = "dmppwa-2.03";
 
 /** Archivos requeridos para que
  * la aplicación funcione fuera de
@@ -52,7 +52,7 @@ const ARCHIVOS = [
   "index.html",
   "img/PDGN.png",
   "manifest.json",
-  "/"
+  '/'
 ];
 
 async function cargaCache() {
@@ -61,7 +61,7 @@ async function cargaCache() {
     CACHE);
   const cache =
     await caches.open(CACHE);
-  await caches.addAll(ARCHIVOS);
+  await cache.addAll(ARCHIVOS);
   console.log("Cache", CACHE,
     "cargado");
 }
