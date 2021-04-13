@@ -5,6 +5,7 @@
     color: #D0E1F9;
       position: absolute;
   top: 0;
+    left: 0;
   height: max-content;
 }
 .header > span , h1{
