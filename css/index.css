@@ -13,9 +13,7 @@ meter{
     display: flex; 
     width: 40%;
     margin: 0 auto;
-    height: 50px;
-    background: rgb(216, 213, 213);
- 
+    height: 50px; 
 }
 #ctDispositivo{
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
